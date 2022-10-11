@@ -55,5 +55,11 @@ main{padding: 0em 2em 2em 2em;
 .details{padding: 0% 20%;}
 
 #homehero{height: 300px;
+    background-image: url(A5JavaJamStarterImages/hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;}
+
+img {
+    border-style: none;
+    max-width: 100%;
+    height: auto;}
