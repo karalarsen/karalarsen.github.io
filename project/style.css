@@ -1,0 +1,8 @@
+* { box-sizing: border-box; }
+
+.onethird{float: left;
+    width: 33%;}
+
+nav ul {list-style-type: none;}
+
+nav a {text-decoration: none;}
