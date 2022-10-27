@@ -86,26 +86,9 @@ main{padding-left: 0%;
     background-color: #FEF6C2;
     overflow: auto;}
 
-main h2{padding-left: 3em;
-        padding-right: 2em;}
-
-main h3{padding-left: 3em;
-        padding-right: 2em;}
-
-main h4{padding-left: 3em;
-        padding-right: 2em;}
-
-main p{padding-left: 3em;
-        padding-right: 2em;}
-
-main div{padding-left: 3em;
-        padding-right: 2em;}
-
-main ul {padding-left: 3em;
-        padding-right: 2em;}
-
-main dl {padding-left: 3em;
-        padding-right: 2em;}
+main h2, h3, h4, p, div, ul, dl {
+    padding-left: 3em;
+    padding-right: 2em;}
 
 .details{padding: 0% 20%;
         overflow: auto;}
