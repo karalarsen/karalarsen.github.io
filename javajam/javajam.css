@@ -1,3 +1,5 @@
+* { box-sizing: border-box; }
+
 body{background-color: #d2b48c;
     margin: 0%;
     color: #221811;
@@ -22,23 +24,19 @@ h1{font-size: 2em;}
 
 h2{color: #8C3826;}
 
-h3{color: #8C3826;}
+h3, dt{color: #8C3826;}
 
 h4{background-color: #D2B48C;
     font-size: 1.2em;
     padding-left: .5em;
-    padding-bottom: .5em;
+    padding-bottom: 0em;
     text-transform: uppercase;
-    border-style: solid;
-    border-bottom: 50px;
-    padding-bottom: 0%;
-    border-color: brown;
+    border-bottom: 1px, solid, #221811;
     clear: left;}
 
-dt{color: #8C3826;}
-
 nav{text-align: center;
-    font-weight: bold;}
+    font-weight: bold;
+    font-size: 1.5em;}
 
 nav a:link {color: #FEF6C2;}
 nav a:visited {color: #D2B48C;}
@@ -51,13 +49,9 @@ nav ul {list-style-type: none;
         display: flex;
         flex-direction: column}
 
-nav li {padding-top: .5em;
-        padding-bottom: .5em;
-        padding-left: 1em;
-        padding-right: 1em;
+nav li {padding: .5em 1em;
         width: 100%;
-        border-style: solid;
-        border-width: 1px;}
+        border-bottom: 1px, solid, #FEF6C2;}
 
 nav a { text-decoration: none; }
 
@@ -66,9 +60,7 @@ footer{background-color: #D2B48C;
     font-style: italic;
     text-align: center;
     padding: 1em 1em;
-    border-style: solid;
-    border-top: 2px;
-    border-color: #8C3826;}
+    border-top: 2px solid #8C3826;}
 
 #wrapper{
     background-color: #231814;
@@ -77,10 +69,7 @@ footer{background-color: #D2B48C;
 #wrapper nav{background-color: #231814;
                 padding: 0%;}
 
-main{padding-left: 0%;
-    padding-right: 0%;
-    padding-top: 0%;
-    padding-bottom: 2em;
+main{padding: 0 0 2em 0;
     display: block;
     background-color: #FEF6C2;}
 
@@ -113,8 +102,6 @@ img {
     max-width: 100%;
     height: auto;}
 
-* { box-sizing: border-box; }
-
 /* .floatleft{float: left;
         padding-right: 2em;
         padding-bottom: 2em;} */
@@ -127,7 +114,7 @@ img {
 
 #desktop {display: none;}
 
-@media screen and (max-width: 600px){
+@media screen and (min-width: 600px){
 
     header{text-align: center;
             padding-left: 0%;}
@@ -156,33 +143,34 @@ img {
     #desktop {display: inline;}
 
     .details {display: flex;
-                flex-direction: row;}
+              flex-direction: row;}
 
     h4 {margin-left: 10%;
         margin-right: 10%;}
 }
 
 @media screen and (min-width: 1024px){
+    @supports (display: grid) {
+        header {grid-area: header;}
+        nav {grid-area: nav;}
+        main {grid-area: main;}
+        footer {grid-area: footer;}
 
-header {grid-area: header;}
-nav {grid-area: nav;}
-main {grid-area: main;}
-footer {grid-area: footer;}
+        #wrapper{display: grid;
+                grid-template:
+                    "header header" 
+                    "nav main"
+                    "footer footer"
+                    / 200px; }
 
-#wrapper{display: grid;
-        grid-template:
-            "header header" 
-            "nav main"
-            "footer footer"
-            / 200px; }
+        nav ul {flex-direction: column;}
 
-nav ul {flex-direction: column;}
+        header {background-image: url(images/coffeelogo.jpg);}
 
-header {background-image: url(images/coffeelogo.jpg);}
+        h1 {padding-left: 240px;}
 
-h1 {padding-left: 240px;}
-
-#homehero {background-image: url(images/hero.jpg)}
-#heroguitar {background-image: url(images/heroguitar.jpg)}
-#heromugs {background-image: url(images/heromugs.jpg)}
+        #homehero {background-image: url(images/hero.jpg)}
+        #heroguitar {background-image: url(images/heroguitar.jpg)}
+        #heromugs {background-image: url(images/heromugs.jpg)}
+    }
 }
