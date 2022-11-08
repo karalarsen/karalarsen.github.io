@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaJam Coffee Bar Menu</title>
+    <title>JavaJam Jobs</title>
     <meta name="description" content="JavaJam Coffee Bar Case Study">
     <meta name="author" content="Your Name">
     <meta name="keywords" content="Homework, USU, Data Analytics and Information Systems">
@@ -38,28 +38,29 @@
         </nav>
 
         <main>
+            
+            <div id="herojobs"></div>
+            
+            <h2>Jobs at JavaJam</h2>
+            <p>Want to work at JavaJam? Fill out the form below to start your application. All information is required.</p>
 
-            <div id="heroguitar"></div>
+            <form method="post" action="https://webdevbasics.net/scripts/javajam8.php">
+                
+                <label for="name">Name: </label>
+                <input type="text" name="myName" id="name" required>
 
-            <h2>Music at JavaJam</h2>
+                <label for="email">Email: </label>
+                <input type="email" name="myEmail" id="email" required>
 
-            <p>The first Friday night each month at JavaJam is a special night. Join us from 8 pm to 11 pm for some
-                music you won&#39;t want to miss!</p>
+                <label for="startdate">Start Date: </label>
+                <input type="date" name="myStart" id="startdate" required>
 
-            <h4>January</h4>
-            <div class="details">
-                <a href="images/melanie.jpg"><img src="images/melaniethumb.jpg"
-                        alt="Melanie"></a>
-                <p>Melanie Morris entertains with her melodic folk style.</p>
-            </div>
+                <label for="experience">Experience: </label>
+                <textarea name="myExperience" id="experience" rows="2" cols="20" required></textarea>
 
-            <h4>February</h4>
-            <div class="details">
-                <a href="images/greg.jpg"><img src="images/gregthumb.jpg"
-                        alt="Greg"></a>
-                <p>Tahoe Greg is back from his tour. New songs. New stories.</p>
-            </div>
+                <input type="submit" value="Apply Now" id="mySubmit">
 
+            </form>
         </main>
 
         <footer>

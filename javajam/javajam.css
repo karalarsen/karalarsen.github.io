@@ -1,5 +1,21 @@
 * { box-sizing: border-box; }
 
+table {margin-left: auto;
+       margin-right: auto;
+       width: 90%;
+       border-spacing: 0em;}
+
+td, th {padding: 10px;}
+
+tr:nth-of-type(odd) {background-color: #D2B48C;}
+
+form { display: flex;
+        flex-direction: column;
+        padding-left: 1em; 
+        width: 80%; }
+
+input, textarea { margin-bottom: .5em; }
+
 body{background-color: #d2b48c;
     margin: 0%;
     color: #221811;
@@ -97,6 +113,11 @@ main ul {padding-left: 2em;}
     background-size: 100% 100%;
     background-repeat: no-repeat;}
 
+#herojobs{height: 300px;
+        background-image: url(images/coffeecup.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;}
+
 img {
     border-style: none;
     max-width: 100%;
@@ -116,6 +137,16 @@ img {
 
 @media screen and (min-width: 600px){
 
+    form {width: 40%;
+        display: grid;
+        gap: 1em;
+        grid-template-columns: 6em 1fr;}
+
+    input[type="submit"] {
+        grid-column: 2;
+        width: 9em;
+    }
+
     header{text-align: center;
             padding-left: 0%;}
         
@@ -134,6 +165,8 @@ img {
     #heromugs {background-image: url(images/heromugs.jpg)}
 
     #heroguitar {background-image: url(images/heroguitar.jpg)}
+
+    #herojobs {background-image: url(images/herojobs.jpg)}
 
     #flow {display: flex;
             flex-direction: row;}
@@ -172,5 +205,6 @@ img {
         #homehero {background-image: url(images/hero.jpg)}
         #heroguitar {background-image: url(images/heroguitar.jpg)}
         #heromugs {background-image: url(images/heromugs.jpg)}
+        #herojobs {background-image: url(images/herojobs.jpg)}
     }
 }
