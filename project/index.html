@@ -2,31 +2,138 @@
 <html lang="en">
 
 <head>
-<title>Fenn's Clothing</title>
+<title>Ice Hutch</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale = 1.0">
 <link rel="stylesheet" href=style.css>
 
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <h1>Fenn's Clothing</h1>
-    </header>
+    <header id="top"></header>
 
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="dresses.html">Dresses</a></li>
-            <li><a href="tops.html">Tops</a></li>
-            <li><a href="shoes.html">Shoes</a></li>
+            <li><a href="#top"><img src="images/logo.png"></a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#hours">Hours & Location</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+            <li><label>Search: </label><input type="search"></li>
         </ul>
     </nav> 
 
     <main>
-    Fenn's Clothing: Solid Colored Casual Fashion
+        <div id="home"><a name="home"></a></div>
+
+        <section id="home">
+            <div id="homehero"></div> <!--enter picture for home page-->
+            
+            <h3>Enjoy the summer with a refreshing snowcone!</h3>
+            <p>Ice Hutch has dozens of flavors and combinations to make your day. Stop by on your trip to the grocery store or anytime for the delicious snack!</p>
+        </section>
+
+        <div id="hours"><a name="hours"></a></div>
+        <section id="hours">
+
+            <h2>Hours & Location</h2>
+
+            <section class="onehalf">
+            <h3>Location</h3>
+            <img src="images/location.png" alt="Map for Ice Hutch Location">
+            <p>Located in the center of Grantsville, off main street and east of Soelburg's market</p>
+            <p>Address: 01-048-0-0055, Grantsville, UT 84029</p>
+            </section>
+
+            <section class="onehalf">
+            <h3>Hours</h3>
+            <img src="images/building.jpg" alt="Building">
+            <p>We follow the high school's summer schedule. This year we open June 5th, 2023 and will stay open until August 20th, 2023</p>
+
+            <p>Our hours during the summer are as follows:</p>
+            <ul>
+                <li>Monday: 12pm - 10pm</li>
+                <li>Tuesday: 12pm - 10pm</li>
+                <li>Wednesday: 12pm - 10pm</li>
+                <li>Thursday: 12pm - 10pm</li>
+                <li>Friday: 12pm - 10pm</li>
+                <li>Saturday: 12pm - 10pm</li>
+                <li>Sunday: Closed</li>
+            </ul>
+            </section>
+
+        <section>
+
+        <div id="menu"><a name="menu"></a></div>
+        <h2>Menu at Ice Hutch</h2>
+
+        <img src="images/menuflavors.jpg" alt="Menu" class="side">
+
+            <section>
+                <h3>Prices</h3>
+                <dl>
+                    <dt>The Gut Buster</dt>
+                    <dd>32oz - - $3.75</dd>
+                    <dt>The Brain Freeze</dt>
+                    <dd>20oz - - $2.75</dd>
+                    <dt>The Big Chill</dt>
+                    <dd>12oz - - $1.75</dd>
+                </dl>
+            </section>
+
+        
+        </section>
+
+        <div id="contactus"><a name="contactus"></a></div>
+        <section>
+            <h2>Contact Us</h2>
+
+            <p>You can reach Ice Hutch by calling 435-555-5555 or emailing icehutchgrantsville@gmail.com</p>
+            <p>Connect with us on <a href="https://www.facebook.com/people/Ice-Hutch/100057240747047/">Facebook</a></p>
+
+            <section>
+                <h3>Leave a review for us!</h3>
+
+                <form method="post" action="mailto:karalarsen84@gmail.com">
+                <fieldset>
+
+                <p><label>Rate your experience with us:</label></p>
+
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                </div>
+
+                <p><label>How can we improve in the future?</label></p>
+                <textarea name="improvement" id="improvement" rows="2" cols="20"></textarea>
+
+                <p><input type="submit" value="Submit"></p>
+
+                </fieldset>
+                </form>
+            </section>
+
+            <section>
+                <h3>Interested in working at Ice Hutch?</h3>
+                <p>Because we align with the high school's schedule, it's a perfect job for students to earn money for the summer</p>
+                <p>Fill out the form <a href="form.html">here</a> to submit an application to us!</p>
+            </section>
+        </section>
     </main>
 
+    <footer>
+        Copyright &copy; 2022 Grantsville Ice Hutch <br>
+        <a href="mailto:icehutchgrantsville@gmail.com">icehutchgrantsville@gmail.com</a>
+    </footer>
 </body>
 
 </html>
