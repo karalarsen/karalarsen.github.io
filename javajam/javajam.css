@@ -47,7 +47,7 @@ h4{background-color: #D2B48C;
     padding-left: .5em;
     padding-bottom: 0em;
     text-transform: uppercase;
-    border-bottom: 1px, solid, #221811;
+    border-bottom: 1px solid #221811;
     clear: left;}
 
 nav{text-align: center;
@@ -67,7 +67,7 @@ nav ul {list-style-type: none;
 
 nav li {padding: .5em 1em;
         width: 100%;
-        border-bottom: 1px, solid, #FEF6C2;}
+        border-bottom: 1px solid #FEF6C2;}
 
 nav a { text-decoration: none; }
 

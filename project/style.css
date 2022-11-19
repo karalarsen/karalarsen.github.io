@@ -1,9 +1,36 @@
 * { box-sizing: border-box; }
 
-.onehalf{float: left;
-    width: 50%;}
+body {display: grid;
+    grid-template-areas:
+        "home"
+        "hours"
+        "menu"
+        "contactus"
+        "footer";
+    background-color: #d0e1ee;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;}
 
-h3{text-align: center;}
+#home {grid-area: "home";}
+
+#hours {grid-area: "hours"}
+
+#menu {grid-area: "menu";}
+
+#contactus {grid-area: "contactus";
+            width: 100%}
+
+#footer {grid-area: "footer";
+        background-color: #0fabc2}
+
+#wrapper{
+    background-color: #d0e1ee;
+    padding: 0% 2%;}
+
+header{background-color: #dc929c;}
+
+nav {position: sticky;
+    top: 0;}
 
 nav ul {list-style-type: none;
     padding: 0%;
@@ -21,71 +48,55 @@ nav li {padding: .5em 1em;
     
 nav a {text-decoration: none;}
 
-nav a:link{color: #0d9baa;}
-nav a:hover{color: #000000;}
-nav a:visited{color:#0d9baa;}
+nav a:link{color: #000000;}
+nav a:visited{color:#000000;}
+nav a:hover{color: darkblue}
+nav a:active{color:#0fabc2}
 
-        .rate {/*float:left;*/
-            height: 46px;
-            padding: 0 10px;
-        }
-        .rate:not(:checked) > input {
-            position:absolute;
-            top:-9999px;
-        }
-        .rate:not(:checked) > label {
-            float:right;
-            width:1em;
-            overflow:hidden;
-            white-space:nowrap;
-            cursor:pointer;
-            font-size:30px;
-            color:#ccc;
-        }
-        .rate:not(:checked) > label:before {
-            content: '★ ';
-        }
-        .rate > input:checked ~ label {
-            color: #ffc700;    
-        }
-        .rate:not(:checked) > label:hover,
-        .rate:not(:checked) > label:hover ~ label {
-            color: #deb217;  
-        }
-        .rate > input:checked + label:hover,
-        .rate > input:checked + label:hover ~ label,
-        .rate > input:checked ~ label:hover,
-        .rate > input:checked ~ label:hover ~ label,
-        .rate > label:hover ~ input:checked ~ label {
-            color: #c59b08;
-        }
+h1 {color: #06454c;
+    text-align: center;}
 
-footer{background-color: #0fabc2}
+h3{text-align: center;}
 
-main{background-color: #d0e1ee}
+#logo {height:75px;}
 
-/* #d47788 for pink shade*/
+#homehero{height: 425px;
+    /*background-image: url(images/snowconecups.jpg);*/
+    background-image: url(images/leafsnowcone.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;}
+
+#intro {text-align: center;
+        color: #06454c;}
+
+.onehalf{float: left;
+    width: 50%;}
 
 img {
     border-style: none;
     max-width: 100%;
     height: auto;}
 
-#homehero{height: 400px;
-    background-image: url(images/snowconecups.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;}
+.hourspicture {height: 300px;
+    float: center;
+    border-style: solid;
+    border-color: #06454c;
+    border-width: 2%;}
+/* #d47788 for pink shade*/
 
-#submit {float: right;}
+.onethird {float: left;
+        height: 750px;
+        width: 33.33%;
+        padding: 3%;
+        /*border-style: solid;
+        border-color: #06454c;
+        border-width: 4% 2%;*/}
 
-.side {float:right;
-       height: 300px;}
-
-.hours {height: 300px;
-float: center;
-border-style: solid;
-border-color: #0d9baa;
-border-width: 1%;}
+.side {height: 300px;
+        width: 400px;
+        border-style: solid;
+        border-color: #06454c;
+        border-width: 2%;}
 
 form { display: flex;
     flex-direction: column;
@@ -94,10 +105,5 @@ form { display: flex;
 
 input {float: left;}
 
-#wrapper{
-    background-color: #d0e1ee;
-    padding: 0% 2%;}
-
-h1 {color: #0d9baa;
-text-align: center;}
+#submit {float: right;}
 

@@ -2,150 +2,181 @@
 <html lang="en">
 
 <head>
-<title>Ice Hutch</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale = 1.0">
-<link rel="stylesheet" href=style.css>
+    <title>Ice Hutch</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href=style.css>
 
-<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    
+
     <header id="top"></header>
 
     <nav>
         <ul>
-            <li><a href="#top"><img src="images/logo.png"></a></li>
-            <li><a href="#top">Home</a></li>
+            <li><a href="#top"><img src="images/logo.png" alt="logo" id="logo"></a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#hours">Hours & Location</a></li>
             <li><a href="#menu">Menu</a></li>
             <li><a href="#contactus">Contact Us</a></li>
             <li><label>Search: </label><input type="search"></li>
         </ul>
-    </nav> 
+    </nav>
+
+    <!--<div id="wrapper"> -->
+        <main>
+            <!--beginning of home section-->
+            <div id="home">
+
+                <div id="homehero"></div>
+                <!--enter picture for home page-->
 
     <div id="wrapper">
-    <main>
-<!--beginning of home section-->
-        <div id="home"><a name="home"></a>
 
-            <div id="homehero"></div> <!--enter picture for home page-->
-            
-            <h1>Enjoy the summer with a refreshing snowcone at Ice Hutch!</h1>
-            <p>Ice Hutch has dozens of flavors and combinations to make your day. Stop by on your trip to the grocery store or anytime for the delicious snack!</p>
-        </div>
-<!--end of home section-->
+                <h1>Enjoy the summer with a refreshing snowcone at Ice Hutch!</h1>
+                <p id="intro">Ice Hutch has dozens of flavors and combinations to make your day. Stop by on your trip to the
+                    grocery store or anytime for the delicious snack!</p>
+            </div>
+            <!--end of home section-->
 
-<!--start of hours&location section-->
-        <div id="hours"><a name="hours"></a>
+            <!--start of hours&location section-->
+            <div id="hours">
 
-            <h2>Hours & Location</h2>
+                <h2>Hours & Location</h2>
 
-            <section class="onehalf">
-            <h3>Location</h3>
-            <img src="images/location.png" alt="Map for Ice Hutch Location" class="hours">
-            <p>Located in the center of Grantsville, off main street and east of Soelburg's market</p>
-            <p>Address: 01-048-0-0055, Grantsville, UT 84029</p>
-            </section>
+                <section class="onehalf">
+                    <h3>Location</h3>
+                    <img src="images/location.png" alt="Map for Ice Hutch Location" class="hourspicture">
+                    <p>Located in the center of Grantsville, off main street and east of Soelburg's market</p>
+                    <p>Address: 01-048-0-0055, Grantsville, UT 84029</p>
+                </section>
 
-            <section class="onehalf">
-            <h3>Hours</h3>
-            <img src="images/building.jpg" alt="Building" class="hours">
-            <p>We follow the high school's summer schedule. This year we open June 5th, 2023 and will stay open until August 20th, 2023</p>
+                <section class="onehalf">
+                    <h3>Hours</h3>
+                    <img src="images/building.jpg" alt="Building" class="hourspicture">
+                    <p>We follow Grantsville High School's summer schedule. This year we open June 5th, 2023 and will stay open
+                        until August 20th, 2023</p>
 
-            <p>Our hours during the summer are as follows:</p>
-            <ul>
-                <li>Monday: 12pm - 10pm</li>
-                <li>Tuesday: 12pm - 10pm</li>
-                <li>Wednesday: 12pm - 10pm</li>
-                <li>Thursday: 12pm - 10pm</li>
-                <li>Friday: 12pm - 10pm</li>
-                <li>Saturday: 12pm - 10pm</li>
-                <li>Sunday: Closed</li>
-            </ul>
-        </div> 
-<!-- end of hours&location section!!-->
+                    <p>Our hours during the summer are as follows:</p>
+                    <ul>
+                        <li>Monday: 12pm - 10pm</li>
+                        <li>Tuesday: 12pm - 10pm</li>
+                        <li>Wednesday: 12pm - 10pm</li>
+                        <li>Thursday: 12pm - 10pm</li>
+                        <li>Friday: 12pm - 10pm</li>
+                        <li>Saturday: 12pm - 10pm</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </section>
+            </div>
+            <!-- end of hours&location section!!-->
 
-<!--Start of Menu Section-->
-        <div id="menu"><a name="menu"></a>
+            <!--Start of Menu Section-->
+            <div id="menu">
 
-        <h2>Menu at Ice Hutch</h2>
+                <h2>Menu at Ice Hutch</h2>
+                <section class="onethird">
+                    <a href = "images/fullsizemenu.jpg" alt = "Full size menu"><img src="images/menuthumb.jpg" alt="Menu" class="side"></a>
+                    <p>Click on image above for full size view of all items and prices on the menu!</p>
+                    <img src="images/holdsnowcone.jpg" alt="snowcones" class="side">
+                </section>
+                
+                <section class="onethird">
+                    <img src="images/flavors.jpg" alt="flavors" class="side">
+                    <p>Ice Hutch has 40+ delicious flavors! You can combine up to 3 flavors into your snowcone!</p>
+                    <img src="images/girlwithsnowcone.jpg" alt="flavors" class="side">
+                </section>
 
-        <img src="images/menuflavors.jpg" alt="Menu" class="side">
-        <img src="images/flavors.jpg" alt="flavors" class="side">
+                <section class="onethird">
+                    <h3>Prices</h3>
 
-            <section>
-                <h3>Prices</h3>
-                <dl>
-                    <dt>The Gut Buster</dt>
-                    <dd>32oz - - $3.75</dd>
-                    <dt>The Brain Freeze</dt>
-                    <dd>20oz - - $2.75</dd>
-                    <dt>The Big Chill</dt>
-                    <dd>12oz - - $1.75</dd>
-                </dl>
-            </section>
-        </div>
+                    <h4>Snowcones</h4>
+                    <dl>
+                        <dt>The Gut Buster (Large Snowcone)</dt>
+                        <dd>32oz - - $3.75</dd>
+                        <dt>The Brain Freeze (Medium Snowcone)</dt>
+                        <dd>20oz - - $2.75</dd>
+                        <dt>The Big Chill (Small Snowcone)</dt>
+                        <dd>12oz - - $1.75</dd>
+                    </dl>
+                    <h4>Cup of Ice</h4>
+                        <dt>32oz -- $1.25</dt>
+                        <dt>20oz -- $1.00</dt>
+                        <dt>12oz -- $0.50</dt>
+                        <dt>Bottle of Water -- $1.00</dt>
+                    
+                    <h4>Ice Cream</h4>
+                        <dt>1 scoop -- $0.50</dt>
+                        <dt>2 scoops -- $1.00</dt>
+                        <dt>3 scoops -- $1.50</dt>
 
-<!--end of menu section-->
+                    <h4>Cream Flavors</h4>
+                        <dt>Cream -- $0.25</dt>
+                        <dt>Extra Cream -- $0.50</dt>
+                    
+                </section>
+            </div>
 
-<!-- start of contact us section-->
+            <!--end of menu section-->
 
-        <div id="contactus"><a name="contactus"></a>
-        
-            <h2>Contact Us</h2>
+            <!-- start of contact us section-->
+            <p> </p>
 
-            <p>You can reach Ice Hutch by calling 435-555-5555 or emailing icehutchgrantsville@gmail.com</p>
-            <p>Connect with us on <a href="https://www.facebook.com/people/Ice-Hutch/100057240747047/" target="">Facebook</a></p>
+            <div id="contactus">
 
-            <section class="onehalf">
-                <h3>Leave a review for us!</h3>
+                <p><h2>Contact Us</h2></p>
 
-                <form method="post" action="mailto:karalarsen84@gmail.com">
-                <fieldset>
+                <p>You can reach Ice Hutch by calling 435-555-5555 or emailing icehutchgrantsville@gmail.com</p>
+                <p>Connect with us on <a href="https://www.facebook.com/people/Ice-Hutch/100057240747047/"
+                        target="_blank">Facebook</a></p>
 
-                <p><label>Rate your experience with us:</label>
+                <section class="onehalf">
+                    <h3>Leave a review for us!</h3>
 
-                <div class="rate">
-                    <input type="radio" id="star5" name="rate" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="rate" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="rate" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="rate" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="rate" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                </div></p>
+                    <form method="post" action="mailto:karalarsen84@gmail.com">
+                        <fieldset>
 
-                <p><label>How can we improve in the future?</label></p>
-                <p><textarea name="improvement" id="improvement" rows="4" cols="40"></textarea></p>
+                            <p><label>Rate your experience with us:</label></p>
+                            <div><input type="radio" id="1" value="1"><label for="1">Negative</label></div>
+                            <div><input type="radio" id="2" value="2"><label for="2">More negative than positive</label></div>
+                            <div><input type="radio" id="3" value="3"><label for="3">Neutral</label></div>
+                            <div><input type="radio" id="4" value="4"><label for="4">More positive than negative</label></div>
+                            <div><input type="radio" id="5" value="5"><label for="5">Positive</label></div>
+                            <!--one star to five star scale-->
 
-                <p><input type="submit" value="Submit" id="submit"></p>
+                            <p><label>How can we improve in the future?</label></p>
+                            <p><textarea name="improvement" id="improvement" rows="4" cols="40"></textarea></p>
 
-                </fieldset>
-                </form>
-            </section>
+                            <p><input type="submit" value="Submit" id="submit"></p>
 
-            <section class="onehalf">
-                <h3>Interested in working at Ice Hutch?</h3>
-                <img src="images/work.jpg" alt="employee">
-                <p>Because we align with the high school's schedule, it's a perfect job for students to earn money for the summer!</p>
-                <p>Fill out the form <a href="form.html" target="">here</a> to submit an application to us!</p>
-            </section>
-        </div>
+                        </fieldset>
+                    </form>
+                </section>
 
-<!--end of contact us section-->
-    </main>
+                <section class="onehalf">
+                    <h3>Interested in working at Ice Hutch?</h3>
+                    <img src="images/work.jpg" alt="employee" id="jobalign">
+                    <!--<img src="images/workers.jpg" alt="employees" id="jobalign"> -->
+                    <p>Because we align with the high school's schedule, it's a perfect job for students to earn money
+                        for the summer!</p>
+                    <p>Fill out the form <a href="form.html" target="_blank">here</a> to submit an application to us!</p>
+                </section>
+            </div>
 
-</div> <!--end of wrapper-->
+            <!--end of contact us section-->
+        </main>
 
-    <footer>
+    </div>
+    <!--end of wrapper-->
+
+    <footer id="footer">
         Copyright &copy; 2022 Grantsville Ice Hutch <br>
-        <a href="mailto:icehutchgrantsville@gmail.com">icehutchgrantsville@gmail.com</a>
+        Email <a href="mailto:icehutchgrantsville@gmail.com">icehutchgrantsville@gmail.com</a> or
+        call <a href="tel:435-555-5555">435-555-5555</a> for more information
     </footer>
+
 
 </body>
 
