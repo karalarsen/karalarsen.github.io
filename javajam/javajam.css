@@ -58,6 +58,21 @@ nav a:link {color: #FEF6C2;}
 nav a:visited {color: #D2B48C;}
 nav a:hover {color: #CC9933;}
 
+nav ul {/* display: flex;
+    flex-direction: column; */
+    font-size: 1.25em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;}
+
+nav li {border-bottom: 1px solid #FEF6C2;
+    /* padding: .5em 1em;
+    width: 100%; */}
+
+nav li a {display: flex;
+    flex-direction: column;
+    padding: .5em 1em;}
+
 nav ul {list-style-type: none;
         padding: 0%;
         margin: 0%;
@@ -118,8 +133,12 @@ main ul {padding-left: 2em;}
         background-repeat: no-repeat;
         background-size: 100% 100%;}
 
-img {
-    border-style: none;
+#herocouch{height: 300px;
+        background-image: url(images/herocouch.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;}
+
+img {border-style: none;
     max-width: 100%;
     height: auto;}
 
@@ -130,6 +149,15 @@ img {
 /* .onethird{float: left;
         width: 33%;
         } */
+
+.item {background-color: #FAF9F7;
+        margin: 1em;
+        padding: 1em;
+        overflow: auto;}
+
+.item img {float: right;}
+
+.current{background-color: #8C3826;}
 
 #mobile {display: inline;}  /* add phone number info */
 
