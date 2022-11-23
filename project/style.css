@@ -75,6 +75,17 @@ nav li {padding: .5em 1em;
     text-align: center;
     display:block;}
     
+nav ul {/* display: flex;
+    flex-direction: column; */
+    font-size: 1.0em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;}
+
+nav li a {display: flex;
+    flex-direction: row;
+    padding: .5em 1em;}
+    
 nav a {text-decoration: none;}
 
 nav a:link{color: #000000;}
@@ -85,13 +96,16 @@ nav a:active{color:#0fabc2}
 h1 {color: #06454c;
     text-align: center;}
 
+h2 {color: #06454c;
+    text-align: center;}
+
 h3{text-align: center;}
 
 #logo {height:75px;}
 
 #homehero{height: 425px;
     /*background-image: url(images/snowconecups.jpg);*/
-    background-image: url(images/leafsnowcone.jpg);
+    background-image: url(images/enhanced.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;}
 
@@ -135,4 +149,8 @@ form { display: flex;
 input {float: left;}
 
 #submit {float: right;}
+
+#jobalign{border-style: solid;
+        border-color: #06454c;
+        border-width: 2%;}
 
