@@ -109,7 +109,8 @@ p {font-family: 'Noto Sans';}
 h1 {color: #06454c;
     text-align: center;
     font-family: "sunny spells";
-    font-size: 2.5em;}
+    font-size: 2.5em;
+    padding: 0em;}
 
 h2 {color: #06454c;
     text-align: center;
@@ -118,6 +119,9 @@ h2 {color: #06454c;
 h3{color: #06454c;
     text-align: center;
     font-family: "sunny spells";}
+
+h4{font-size: 1em;
+    font-family: "Noto Sans";}
 
 main li, dl, dt, dd {font-family: 'Noto Sans';}
 
@@ -130,7 +134,8 @@ main li, dl, dt, dd {font-family: 'Noto Sans';}
     background-repeat: no-repeat;}
 
 #intro {text-align: center;
-        color: #06454c;}
+        color: #06454c;
+        padding: 0;}
 
 .onehalf{float: left;
     width: 50%;
@@ -160,7 +165,7 @@ img {
         border-width: 4% 2%;*/}
 
 .side {height: 19em;
-        width: 19em;
+        width: 21em;
         border-style: solid;
         border-color: #06454c;
         border-width: 2%;}
