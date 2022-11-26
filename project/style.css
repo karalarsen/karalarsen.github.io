@@ -1,11 +1,16 @@
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
-@font-face {font-family: "sunny spells";
+@font-face {
+    font-family: "sunny spells";
     /* src: url(BarelyEnoughRegular-JRD6o.ttf); */
     /*src: url(RustyHooksRegular-nROER.ttf); */
-    src: url(SunnyspellsRegular-MV9ze.otf);}
+    src: url(SunnyspellsRegular-MV9ze.otf);
+}
 
-body {display: grid;
+body {
+    display: grid;
     grid-template-areas:
         "home"
         "hoursheader"
@@ -18,172 +23,264 @@ body {display: grid;
     background-color: #d0e1ee;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    margin: 0;}
+    margin: 0;
+}
 
-#home {grid-area: home;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;}
+#home {
+    grid-area: home;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
-#hoursheader {grid-area: hoursheader;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            padding-left: 2.5em;}
+#hoursheader {
+    grid-area: hoursheader;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 2.5em;
+}
 
-#hours {grid-area: hours;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;}
+#hours {
+    grid-area: hours;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
-#menuheader {grid-area: menuheader;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            padding-left: 2.5em;}
+#menuheader {
+    grid-area: menuheader;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 2.5em;
+}
 
-#menu {grid-area: menu;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding-left: 2.5em;}
+#menu {
+    grid-area: menu;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 2.5em;
+}
 
-#contactusheader {grid-area: contactusheader;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                padding-left: 2.5em;}
+#contactusheader {
+    grid-area: contactusheader;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 2.5em;
+}
 
-#contactus {grid-area: contactus;
-            /* display: flex; */
-            /* flex-direction: row; */
-            flex-wrap: wrap;
-            padding-left: 2.5em;}
+#contactus {
+    grid-area: contactus;
+    /* display: flex; */
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    padding-left: 2.5em;
+}
 
-#footer {grid-area: footer;
-        background-color: #0fabc2;
-        color: #ffffff;
-        padding-left: 2.5em;}
+#footer {
+    grid-area: footer;
+    background-color: #0fabc2;
+    color: #ffffff;
+    padding-left: 2.5em;
+}
 
 /* #footerlogo {float: right;
             height: 50px;} */
 
-#wrapper{
+#wrapper {
     background-color: #d0e1ee;
-    padding: 0% 2%;}
+    padding: 0% 2%;
+}
 
-header{background-color: #dc929c;}
+header {
+    background-color: #dc929c;
+}
 
-nav {position: sticky;
+nav {
+    position: sticky;
     top: 0;
-    max-height: .5em;}
+    max-height: .5em;
+}
 
-nav ul {list-style-type: none;
+nav ul {
+    list-style-type: none;
     padding: 0%;
     margin: 0%;
     font-size: 1.3em;
     display: flex;
     flex-direction: row;
-    background-color: #dc929c;}
+    background-color: #dc929c;
+}
 
-nav li {padding: .5em 1em;
+nav li {
+    padding: .5em 1em;
     width: 100%;
     border-bottom: 1px, solid;
     text-align: center;
-    display:block;}
-    
+    display: block;
+}
+
 /*nav li a {display: flex;
     flex-direction: row;
     padding: .5em 1em;} */
-    
-nav a {text-decoration: none;
-    font-family: "sunny spells";}
 
-nav a:link{color: #000000;}
-nav a:visited{color:#000000;}
-nav a:hover{color: #0d3a3e;}
-nav a:active{color:#0fabc2;}
+nav a {
+    text-decoration: none;
+    font-family: "sunny spells";
+}
 
-p {font-family: 'Noto Sans';}
+nav a:link {
+    color: #000000;
+}
 
-h1 {color: #06454c;
+nav a:visited {
+    color: #000000;
+}
+
+nav a:hover {
+    color: #0d3a3e;
+}
+
+nav a:active {
+    color: #0fabc2;
+}
+
+p {
+    font-family: 'Noto Sans';
+}
+
+h1 {
+    color: #06454c;
     text-align: center;
     font-family: "sunny spells";
     font-size: 2.5em;
-    padding: 0em;}
+    padding: 0em;
+}
 
-h2 {color: #06454c;
+h2 {
+    color: #06454c;
     text-align: center;
-    font-family: "sunny spells";}
+    font-family: "sunny spells";
+}
 
-h3{color: #06454c;
+h3 {
+    color: #06454c;
     text-align: center;
-    font-family: "sunny spells";}
+    font-family: "sunny spells";
+}
 
-h4{font-size: 1em;
-    font-family: "Noto Sans";}
+h4 {
+    font-size: 1em;
+    font-family: "Noto Sans";
+}
 
-main li, dl, dt, dd {font-family: 'Noto Sans';}
+main li,
+dl,
+dt,
+dd {
+    font-family: 'Noto Sans';
+}
 
-#logo {height:2em;}
+#logo {
+    height: 2em;
+}
 
-#homehero{height: 30em;
+#homehero {
+    height: 30em;
     /*background-image: url(images/snowconecups.jpg); */
     background-image: url(images/enhanced.jpg);
     background-size: 100% 100%;
-    background-repeat: no-repeat;}
+    background-repeat: no-repeat;
+}
 
-#intro {text-align: center;
-        color: #06454c;
-        padding: 0;}
+#intro {
+    text-align: center;
+    color: #06454c;
+    padding: 0;
+}
 
-.onehalf{float: left;
+.onehalf {
+    float: left;
     width: 50%;
-    padding-left: 2.5em;}
+    padding-left: 2.5em;
+}
 
 img {
     border-style: none;
     max-width: 100%;
-    height: auto;}
+    height: auto;
+}
 
-.hourspicture {height: 19em;
+.hourspicture {
+    height: 19em;
     float: center;
     border-style: solid;
     border-color: #06454c;
-    border-width: 2%;}
+    border-width: 2%;
+}
+
 /* #d47788 for pink shade*/
 
-.center{display: flex;
-        justify-content: center;}
+.center {
+    display: flex;
+    justify-content: center;
+}
 
-.onethird {float: left;
-        height: 47em;
-        width: 33.33%;
-        padding: 3%;
-        /*border-style: solid;
+.onethird {
+    float: left;
+    height: 47em;
+    width: 33.33%;
+    padding: 3%;
+    /*border-style: solid;
         border-color: #06454c;
-        border-width: 4% 2%;*/}
+        border-width: 4% 2%;*/
+}
 
-.side {height: 19em;
-        width: 21em;
-        border-style: solid;
-        border-color: #06454c;
-        border-width: 2%;}
+.side {
+    height: 19em;
+    width: 21em;
+    border-style: solid;
+    border-color: #06454c;
+    border-width: 2%;
+}
 
-form {display: flex;
+form {
+    display: flex;
     flex-direction: column;
     /* padding-left: 1em; */
-    width: 95%;}
+    width: 95%;
+}
 
-input {float: left;}
+input {
+    float: left;
+}
 
-label {font-family: 'Noto Sans';}
+label {
+    font-family: 'Noto Sans';
+}
 
-#submit {float: left;}
+#submit {
+    float: left;
+}
 
-#jobalign{border-style: solid;
-        border-color: #06454c;
-        border-width: 2%;
-        height: 20em;
-        width: 20em;}
+#jobalign {
+    border-style: solid;
+    border-color: #06454c;
+    border-width: 2%;
+    height: 20em;
+    width: 20em;
+}
 
+@media screen and (max-width: 600px) {
+
+    /* #hamburgernav {} */
+
+    /* hide original navigation and have hamburger navigation show. 
+    When hamburger navigation button is clicked, the navigation will appear below */
+
+    #homehero {background-image: url(images/enhancedmobile.jpg);}
+
+}
