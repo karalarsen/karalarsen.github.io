@@ -4,8 +4,7 @@
 
 @font-face {
     font-family: "sunny spells";
-    /* src: url(BarelyEnoughRegular-JRD6o.ttf); */
-    /*src: url(RustyHooksRegular-nROER.ttf); */
+
     src: url(SunnyspellsRegular-MV9ze.otf);
 }
 
@@ -230,7 +229,7 @@ img {
 }
 
 .onethird {
-    float: left;
+    /* float: left; */
     height: 47em;
     width: 33.33%;
     padding: 3%;
@@ -274,6 +273,10 @@ label {
     width: 20em;
 }
 
+#dateupdate {
+    font-size: .65em;
+}
+
 @media screen and (max-width: 600px) {
 
     /* #hamburgernav {} */
@@ -282,5 +285,12 @@ label {
     When hamburger navigation button is clicked, the navigation will appear below */
 
     #homehero {background-image: url(images/enhancedmobile.jpg);}
+
+    .onethird {width: 100%;}
+
+    #hold {display: none;}
+    #girlsnow {display: none;}
+
+    .onehalf {width: 100%;}
 
 }
