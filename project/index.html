@@ -5,8 +5,8 @@
     <title>Ice Hutch</title>
     <meta charset="UTF-8">
     <meta name="author" content="Kara Larsen">
-    <meta name="description" content="Website for Ice Hutch snowcone shack in Grantsville, Utah">
-    <meta name="keywords" content="snowcone, shaved ice, ice hutch, grantsville, desert, ice cream">
+    <meta name="description" content="Ice Hutch snowcone shack in Grantsville, Utah">
+    <meta name="keywords" content="snowcone, snowcone near me, shaved ice, shaved ice near me, ice hutch, grantsville, dessert, ice cream">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap">
     <link rel="stylesheet" href=style.css>
@@ -27,7 +27,6 @@
             <li><a href="#contactusheader">Contact Us</a></li>
             <!-- <li><label>Search: </label><input type="search"></li> -->
         </ul>
-    <script src="js/hamburgernav.js"></script>
     </nav>
 
     <!--<div id="wrapper"> -->
@@ -36,7 +35,6 @@
             <div id="home">
 
                 <div id="homehero"></div>
-                <!--enter picture for home page-->
 
     <div id="wrapper">
 
@@ -47,7 +45,6 @@
             <!--end of home section-->
 
             <!--start of hours&location section-->
-            <!-- <div id="hours"> -->
 
             <div id="hoursheader"><h1>Hours & Location</h1></div>
 
@@ -55,7 +52,8 @@
 
                 <section class="onehalf">
                     <h2>Location</h2>
-                    <div class="center"><img src="images/location.png" alt="Map for Ice Hutch Location" class="hourspicture"></div>
+                    <div class="center"><iframe src="https://www.google.com/maps/place/Ice+Hutch/@40.6006521,-112.4589683,17z/data=!4m5!3m4!1s0x8752b7d7a52e04d7:0xc1597c8177d01cb4!8m2!3d40.6006521!4d-112.4567796" class="hourspicture"></iframe></div>
+                        <!-- <img src="images/location.png" alt="Map for Ice Hutch Location" class="hourspicture"></div> -->
                     <p>Located in the center of Grantsville, off main street and east of Soelburg's market</p>
                     <p>Address: 01-048-0-0055, Grantsville, UT 84029</p>
                 </section>
@@ -65,6 +63,9 @@
                     <div class="center"><img src="images/building.jpg" alt="Building" class="hourspicture"></div>
                     <p>We follow Grantsville High School's summer schedule. This year we open June 5th, 2023 and will stay open
                         until August 20th, 2023</p>
+                    
+                    <p id="closed"></p>
+                    <script src = "js/closed.js"></script>
 
                     <p>Our hours during the summer are as follows:</p>
                     <ul>
@@ -78,7 +79,7 @@
                     </ul>
                 </section>
             </div>
-            <!-- end of hours&location section!!-->
+            <!-- end of hours&location section!-->
 
             <!--Start of Menu Section-->
 
@@ -143,8 +144,8 @@
                 <section class="onehalf">
                     <h2>Leave a review for us!</h2>
 
-                    <form method="post" action="mailto:karalarsen84@gmail.com">
-                        <fieldset>
+                    <form method="post" action="mailto:karalarsen84@gmail.com" id="form">
+                        <!--<fieldset> -->
 
                             <p><label>Rate your experience with us:</label></p>
                             <div><input type="radio" id="1" value="1"><label for="1">Negative</label></div>
@@ -155,21 +156,21 @@
                             <!--one star to five star scale-->
 
                             <p><label>How can we improve in the future?</label></p>
-                            <p><textarea name="improvement" id="improvement" rows="4" cols="40"></textarea></p>
+                            <p><textarea name="improvement" id="improvement" rows="5" cols="25"></textarea></p>
 
                             <p><input type="submit" value="Submit" id="submit"></p>
 
-                        </fieldset>
+                        <!-- </fieldset> -->
                     </form>
                 </section>
 
                 <section class="onehalf">
                     <h2>Interested in working at Ice Hutch?</h2>
                     <div class="center"><img src="images/work.jpg" alt="employee" id="jobalign"></div>
-                    <!--<img src="images/workers.jpg" alt="employees" id="jobalign"> -->
+                    
                     <p>Because we align with the high school's schedule, it's a perfect job for students to earn money
                         for the summer!</p>
-                    <p>Fill out the form <a href="form.html" target="_blank">here</a> to submit an application to us!</p>
+                    <p>Fill out the form <a href="https://forms.gle/tH5N8ieuqsx9Mh3C7" target="_blank">here</a> to submit an application to us!</p>
                 </section>
             </div>
 
@@ -183,7 +184,9 @@
         <p> </p>
         Copyright &copy; 2022 Grantsville Ice Hutch <br>
         Email <a href="mailto:icehutchgrantsville@gmail.com">icehutchgrantsville@gmail.com</a> or
-        call <a href="tel:435-555-5555">435-555-5555</a> for more information
+        call <a href="tel:435-555-5555">435-555-5555</a> for more information <br>
+        Connect with us on <a href="https://www.facebook.com/people/Ice-Hutch/100057240747047/"
+        target="_blank">Facebook!</a>
         <!-- <img src="images/logo.png" alt="logo" id="footerlogo"> -->
         <p> </p>
         <p id="dateupdate"></p>

@@ -249,8 +249,11 @@ img {
 form {
     display: flex;
     flex-direction: column;
-    /* padding-left: 1em; */
+    padding-left: .5em;
     width: 95%;
+    border-style: solid;
+    border-width: .2em;
+    border-color:#06454c;
 }
 
 input {
@@ -279,18 +282,14 @@ label {
 
 @media screen and (max-width: 600px) {
 
-    /* #hamburgernav {} */
-
-    /* hide original navigation and have hamburger navigation show. 
-    When hamburger navigation button is clicked, the navigation will appear below */
-
     #homehero {background-image: url(images/enhancedmobile.jpg);}
+    
+    .onehalf {width: 100%;}
 
     .onethird {width: 100%;}
 
     #hold {display: none;}
-    #girlsnow {display: none;}
 
-    .onehalf {width: 100%;}
+    #girlsnow {display: none;}
 
 }
