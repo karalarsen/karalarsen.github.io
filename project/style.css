@@ -81,7 +81,7 @@ body {
 
 #footer {
     grid-area: footer;
-    background-color: #0fabc2;
+    background-color: #0d7684; /* #0fabc2; #0d7684 */
     color: #ffffff;
     padding-left: 2.5em;
 }
