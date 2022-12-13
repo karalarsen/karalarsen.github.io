@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap">
     <link rel="stylesheet" href=style.css>
+        <!-- font awesome connection -->
+    <script src="https://kit.fontawesome.com/de18d1aa98.js" crossorigin="anonymous"></script>
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
@@ -28,7 +30,7 @@
 
     <header id="top"></header>
 
-    <nav id="hamburgernav">
+    <nav>
         <ul>
             <li><a href="#top"><img src="images/logo.png" alt="logo" id="logo"></a></li>
             <li><a href="#home">Home</a></li>
@@ -40,18 +42,20 @@
     </nav>
 
     <!--<div id="wrapper"> -->
-        <main>
+    
+        <!-- <main> -->
             <!--beginning of home section-->
-            <div id="home">
+            <div id="home"></div>
 
                 <div id="homehero"></div>
 
     <div id="wrapper">
+        <main>
 
                 <h1>Enjoy the summer with a refreshing snowcone at Ice Hutch!</h1>
                 <p id="intro">Ice Hutch has dozens of flavors and combinations to make your day. Stop by on your trip to the
                     grocery store or anytime for the delicious snack!</p>
-            </div>
+
             <!--end of home section-->
 
             <!--start of hours&location section-->
@@ -62,8 +66,8 @@
 
                 <section class="onehalf">
                     <h2>Location</h2>
-                    <div class="center"><iframe src="https://www.google.com/maps/place/Ice+Hutch/@40.6006521,-112.4589683,17z/data=!4m5!3m4!1s0x8752b7d7a52e04d7:0xc1597c8177d01cb4!8m2!3d40.6006521!4d-112.4567796" class="hourspicture"></iframe></div>
-                        <!-- <dive class="center"><img src="images/location.png" alt="Map for Ice Hutch Location" class="hourspicture"></div> -->
+                    <div class="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.3248370828537!2d-112.45896828502363!3d40.600656152357445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752b7d7a52e04d7%3A0xc1597c8177d01cb4!2sIce%20Hutch!5e0!3m2!1sen!2sus!4v1670900507955!5m2!1sen!2sus" class="hourspicture" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    <!-- <div class="center"><img src="images/location.png" alt="Map for Ice Hutch Location" class="hourspicture"></div> -->
                     <p>Located in the center of Grantsville, off main street and east of Soelburg's market</p>
                     <p>Address: 01-048-0-0055, Grantsville, UT 84029</p>
                 </section>
@@ -97,19 +101,19 @@
 
             <div id="menu">
 
-                <section class="onethird">
-                    <a href = "images/fullsizemenu.jpg" alt = "Full size menu"><img src="images/menuthumb.jpg" alt="Menu" class="side" id="menu"></a>
+                <div class="onethird">
+                    <a href = "images/fullsizemenu.jpg"><img src="images/menuthumb.jpg" alt="Menu" class="side"></a>
                     <p>Click on image above for full size view of all items and prices on the menu!</p>
                     <img src="images/holdsnowcone.jpg" alt="snowcones" class="side" id="hold">
-                </section>
+                </div>
 
-                <section class="onethird">
+                <div class="onethird">
                     <img src="images/flavors.jpg" alt="flavors" class="side" id="flavors">
-                    <p>Ice Hutch has 40+ delicious flavors! You can combine up to 3 flavors into your snowcone!</p>
+                    <p>Ice Hutch has 40+ delicious flavors! Combine up to 3 in your snowcone!</p>
                     <img src="images/girlwithsnowcone.jpg" alt="girl with snowcone" class="side" id="girlsnow">
-                </section>
+                </div>
 
-                <section class="onethird">
+                <div class="onethird">
                     <h2>Prices</h2>
 
                     <h4>Snowcones</h4>
@@ -122,21 +126,24 @@
                         <dd>12oz - - $1.75</dd>
                     </dl>
                     <h4>Cup of Ice</h4>
-                        <dt>32oz -- $1.25</dt>
-                        <dt>20oz -- $1.00</dt>
-                        <dt>12oz -- $0.50</dt>
-                        <dt>Bottle of Water -- $1.00</dt>
-                    
+                    <ul>
+                        <li>32oz -- $1.25</li>
+                        <li>20oz -- $1.00</li>
+                        <li>12oz -- $0.50</li>
+                        <li>Bottle of Water -- $1.00</li>
+                    </ul>
                     <h4>Ice Cream</h4>
-                        <dt>1 scoop -- $0.50</dt>
-                        <dt>2 scoops -- $1.00</dt>
-                        <dt>3 scoops -- $1.50</dt>
-
+                    <ul>
+                        <li>1 scoop -- $0.50</li>
+                        <li>2 scoops -- $1.00</li>
+                        <li>3 scoops -- $1.50</li>
+                    </ul>
                     <h4>Cream Flavors</h4>
-                        <dt>Cream -- $0.25</dt>
-                        <dt>Extra Cream -- $0.50</dt>
-                    
-                </section>
+                    <ul>
+                        <li>Cream -- $0.25</li>
+                        <li>Extra Cream -- $0.50</li>
+                    </ul>
+                </div>
             </div>
 
             <!--end of menu section-->
@@ -193,17 +200,20 @@
     <footer id="footer">
         <p> </p>
         Copyright &copy; 2022 Grantsville Ice Hutch <br>
-        Email <a href="mailto:icehutchgrantsville@gmail.com">icehutchgrantsville@gmail.com</a> or
-        call <a href="tel:435-555-5555">435-555-5555</a> for more information <br>
-        Connect with us on <a href="https://www.facebook.com/people/Ice-Hutch/100057240747047/"
-        target="_blank">Facebook!</a>
+        <p> </p>
+        <ul>
+            <li><a href="mailto:icehutchgrantsville@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+            <li><a href="tel:435-555-5555"><i class="fa-solid fa-phone"></i></a></li>
+
+            <li><a href="https://www.facebook.com/people/Ice-Hutch/100057240747047/" aria-label="facebook"><i class="fab fa-facebook-square"
+                aria-hidden="true"></i></a></li>
+        </ul>
         <!-- <img src="images/logo.png" alt="logo" id="footerlogo"> -->
         <p> </p>
         <p id="dateupdate"></p>
         <script src="js/dateupdate.js"></script>
         <p> </p>
     </footer>
-
 
 </body>
 

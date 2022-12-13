@@ -117,7 +117,7 @@ nav ul {
 nav li {
     padding: .5em 1em;
     width: 100%;
-    border-bottom: 1px, solid;
+    border-bottom: 1px solid;
     text-align: center;
     display: block;
 }
@@ -215,10 +215,9 @@ img {
 
 .hourspicture {
     height: 19em;
-    float: center;
     border-style: solid;
     border-color: #06454c;
-    border-width: 2%;
+    border-width: 0.15em;
 }
 
 /* #d47788 for pink shade*/
@@ -238,12 +237,14 @@ img {
         border-width: 4% 2%;*/
 }
 
+main li {list-style-type: none;}
+
 .side {
     height: 19em;
     width: 21em;
     border-style: solid;
     border-color: #06454c;
-    border-width: 2%;
+    border-width: 0.15em;
 }
 
 form {
@@ -271,13 +272,25 @@ label {
 #jobalign {
     border-style: solid;
     border-color: #06454c;
-    border-width: 2%;
+    border-width: 0.15em;
     height: 20em;
     width: 20em;
 }
 
 #dateupdate {
     font-size: .65em;
+}
+
+footer li {
+    display: inline;
+    margin-right: 1em;
+    font-size: 125%;
+}
+
+footer li a {
+    text-decoration: none;
+    /* color: #011946; */
+    color: #ffffff;
 }
 
 @media screen and (max-width: 600px) {
